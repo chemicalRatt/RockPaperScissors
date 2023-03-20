@@ -1,3 +1,6 @@
+let p = null;
+let c = null;
+
 function getComputerChoice(){
     switch(Math.floor(Math.random() * 3)+1){
         case 1: return 'rock';
@@ -18,8 +21,8 @@ function getPlayerChoice(){
 }
 
 function playRound(){
-    let p = getPlayerChoice();
-    let c = getComputerChoice();
+    p = getPlayerChoice();
+    c = getComputerChoice();
 
     console.log("Computer chose " + c + " and you chose " + p);
 
@@ -40,7 +43,7 @@ function playRound(){
 }
 
 function game(){
-    console.log("Let's play rock, paper, scissors!");
+    console.log("Let's play rock, paper, scissors! Best 3 of 5!");
 
     let pCount = 0;
     let cCount = 0;
@@ -49,11 +52,11 @@ function game(){
     for(let i = 0; i < 5; i++){
         switch (playRound()){
             case 1:
-                console.log("You won the round!");
+                console.log(p + " beats " + c + "! You won the round!");
                 pCount++;
                 break;
             case 2:
-                console.log("You lost the round! Oh no!");
+                console.log(c + " beats " + p + "! You lost the round! Oh no!");
                 cCount++;
                 break;
             default:
