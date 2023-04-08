@@ -10,11 +10,19 @@
 </head>
 <body>
     <div class="root">
-        <div class="selection-display"></div>
-        <div class="selection">
+        <div class="container" id="choice-container">
+            <div class="container" id="player-choice">PLAYER</div>
+            <div class="container" id="cpu-choice">CPU</div>
+        </div>
+        <div class="container" id="dialog">Make a selection...</div>
+        <div class="container" id="button-container">
             <button id="rock">Rock</button>
             <button id="paper">Paper</button>
             <button id="scissors">Scissors</button>
+        </div>
+        <div class="container" id="score-container">
+            <div id="player-score">Player: 0</div>
+            <div id="cpu-score">CPU: 0</div>
         </div>
     </div>
 </body>
