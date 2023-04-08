@@ -25,14 +25,14 @@ body {
     color: white;
     font-family: "Courier New", monospace;
     font-weight: bold;
-    font-size: 2lvw;
+    font-size: 3lvw;
     text-align: center;
 }
 
 #cpu-choice,
 #player-choice{
-    width: 20lvw;
-    height: 10lvh;
+    width: 40lvw;
+    height: 25lvh;
     background-color: rgba(128, 128, 128, 0.5);
     display: flex;
     align-items: center;
@@ -42,9 +42,9 @@ body {
 }
 
 button {
-    width: 15lvw;
-    height: 10lvh;
-    font-size: 2lvw;
+    width: 20lvw;
+    height: 20lvh;
+    font-size: 4lvw;
     border-radius: 5%;
     font-family: "Courier New", monospace;
     color: white;

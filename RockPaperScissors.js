@@ -39,7 +39,7 @@ function updateDisplay(roundResult, pSelection, oSelection){
     switch (roundResult){
         case "end":
             BTN_CONTAINER.innerHTML = "";
-            BTN_RESTART.innerText = "Start New Game";
+            BTN_RESTART.innerText = "New Game";
             BTN_CONTAINER.appendChild(BTN_RESTART);
             BTN_RESTART.addEventListener("click", refreshPage, false);
             
@@ -61,14 +61,14 @@ function updateDisplay(roundResult, pSelection, oSelection){
         case 1:
             PLAYER_CHOICE.innerText = `Player chose\n${pSelection}!`;
             CPU_CHOICE.innerText = `CPU chose\n${oSelection}!`;
-            DIALOG.innerText = `${pSelection} beats ${oSelection}! You won the round!`;
+            DIALOG.innerText = `${pSelection} beats ${oSelection}!\nYou won the round!`;
             PLAYER_SCORE.innerText = `Player: ${playerScore}`;
             CPU_SCORE.innerText = `CPU: ${opponentScore}`;
             break;
         case 2:
             PLAYER_CHOICE.innerText = `Player chose\n${pSelection}!`;
             CPU_CHOICE.innerText = `CPU chose\n${oSelection}!`;
-            DIALOG.innerText = `${oSelection} beats ${pSelection}! You lost the round!`;
+            DIALOG.innerText = `${oSelection} beats ${pSelection}!\nYou lost the round!`;
             PLAYER_SCORE.innerText = `Player: ${playerScore}`;
             CPU_SCORE.innerText = `CPU: ${opponentScore}`;
             break;
