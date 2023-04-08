@@ -29,6 +29,11 @@ body {
     text-align: center;
 }
 
+#button-container{
+    flex-direction: column;
+    gap: 2lvh;
+}
+
 #cpu-choice,
 #player-choice{
     width: 40lvw;
@@ -42,8 +47,6 @@ body {
 }
 
 button {
-    width: 20lvw;
-    height: 20lvh;
     font-size: 4lvw;
     border-radius: 5%;
     font-family: "Courier New", monospace;
